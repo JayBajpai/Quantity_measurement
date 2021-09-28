@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            display: flex;
+            height: 61px;
+            border: 1px solid #eee;
+            align-content: center;
+            width: 100%;
+        }
+
+        .header-logo {
+            text-align: left;
+            font: normal normal 600 21px/31px Poppins;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            width: 50%;
+            padding-top: 1%;
+            padding-left: 10%;
+        }
+
+        .header-right {
+            text-align: right;
+            font: normal normal normal 12px/18px Poppins;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            width: 50%;
+            padding-right: 5%;
+            padding-top: 2%;
+        }
+
+        .banner {
+            background-color: #446DFF;
+            color: #fff;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-text {
+            text-align: center;
+            margin: 0;
+            font: normal normal normal 25px/30px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+
+        .Image-content {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #border-green:hover {
+            border-color: #0EC098;
+            background: #EDFDF9 0% 0% no-repeat;
+        }
+
+        #border-red:hover {
+            border-color: red;
+            background: #FFEEF0 0% 0% no-repeat;
+
+        }
+
+
+        #border-voilet:hover {
+            border-color: violet;
+            background: #E8DDFF 0% 0% no-repeat;
+        }
+
+        .section-content {
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: uppercase;
+            opacity: 1;
+            position: relative;
+            left: 30%;
+            top: 15px;
+            margin-top: 0;
+            margin-bottom: 46px;
+        }
+
+        .section-wrapper {
+            background: #F5F6FA 0% 0% no-repeat;
+            opacity: 1;
+        }
+
+        .img-title {
+            text-align: center;
+            font: normal normal medium 15px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: capitalize;
+            opacity: 0.21;
+            margin: 0;
+        }
+
+        .convertor {
+            display: flex;
+        }
+
+        .convertor-Left {
+            width: 50%;
+            height: 15px;
+            opacity: 0.62;
+            text-align: center;
+        }
+
+        .convertor-Right {
+            width: 50%;
+            opacity: 0.62;
+            text-align: center;
+
+        }
+
+
+        .converter-body {
+            width: 400px;
+            height: 150px;
+            position: absolute;
+            margin-top: 75px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #E7DCFE;
+            border-radius: 3px;
+            opacity: 1;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        #input {
+            margin-left: 25px;
+        }
+
+        #inputType,
+        #resultType {
+            margin-left: 25px;
+            width: 166.66px;
+        }
+
+        #resultType {
+            margin-left: 12.5px;
+        }
+
+        .quantity-measurement-wrapper {
+            width: 100%;
+            display: flex;
+            margin-top: 51px;
+        }
+
+        .quantity-measurement-from-wrapper {
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .quantity-measurement-to-wrapper {
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            display: flex;
+            align-items: flex-start;
+            margin-left: 25px;
+        }
+
+        .quantity-measurement-from {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .quantity-measurement-to {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .qunatity-measure-label {
+            font: normal normal medium 12px/15px Montserrat;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: uppercase;
+            opacity: 0.62;
+        }
+
+        .qunatity-measure-text {
+            height: 45px;
+            width: 278px;
+        }
+
+        .quantity-select {
+            height: 45px;
+            width: 280px;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: capitalize;
+            opacity: 1;
+            font-size: 15px;
+            border-radius: 0px;
+        }
+
+        input.qunatity-measure-text {
+            text-align: left;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            font-size: 31px;
+            font-weight: 400;
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid
+        }
+
+        .img-wrapper {
+            text-decoration: none;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+            background: #FFFFFF 0% 0% no-repeat;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 7px;
+            opacity: 1;
+        }
+
+        .img-container {
+            width: 12px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo"><span>Quanment</span></div>
+            <div class="header-right"><span>History</span></div>
+        </div>
+        <div class="banner">
+            <p class="banner-text">Welcome to Quantity Measurement</p>
+        </div>
+    </header>
+    <section class="section-wrapper">
+        <p class="section-content">Choose Type</p>
+        <div class="Image-content">
+            <a href="home_page.html" class="img-wrapper" id="border-green">
+                <div>
+                    <div>
+                        <img class="img1" id="img-scale" src="../assets/images/scale.svg" alt="Length Button">
+                    </div>
+
+                    <p class="img-title" id="img-title1" id="img-title1">length</p>
+                </div>
+            </a>
+            <a href="temperature.html" class="img-wrapper" id="border-red">
+                <div>
+                    <div>
+                        <img class="img2" id="img-temp" src="../assets/images/hot.svg" alt="Temperature Button">
+                    </div>
+                    <p class="img-title" id="img-title2">Temperature</p>
+                </div>
+            </a>
+            <a href="volume.html" class="img-wrapper" id="border-voilet">
+                <div>
+                    <div>
+                        <img class="img3" id="img-vol" src="../assets/images/beaker.svg" alt="Volume Button">
+                    </div>
+                    <p class="img-title" id="img-title3">Volume</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="quantity-measurement-wrapper">
+            <div class="quantity-measurement-from-wrapper">
+                <div class="quantity-measurement-from">
+                    <label class="qunatity-measure-label">From</label>
+                    <input type="text" class="qunatity-measure-text" id="inputFrom" />
+                    <select class="quantity-select" id="quantity-select-from">
+                        <option value="meter">meter</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Inch">Inch</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quantity-measurement-to-wrapper">
+                <div class="quantity-measurement-to">
+                    <label class="qunatity-measure-label">To</label>
+                    <input class="qunatity-measure-text" type="text" id="result" />
+                    <select class="quantity-select" id="quantity-select-to">
+                        <option value="meter">meter</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Inch">Inch</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+<script>
+    var imgWrapperGreen = document.getElementById("border-green");
+    var imgWrapperRed = document.getElementById('border-red')
+    var imgWrapperVoilet = document.getElementById('border-voilet')
+    var imgScale = document.getElementById('img-scale')
+    var imgTemp = document.getElementById('img-temp')
+    var imgVol = document.getElementById('img-vol')
+    var scaleTitle = document.getElementById('img-title1')
+    var temTitle = document.getElementById('img-title2')
+    var volTitle = document.getElementById('img-title3')
+
+
+    imgWrapperGreen.addEventListener("mouseover", function () {
+        imgScale.src = "../assets/images/scale-color.svg"
+        scaleTitle.style.color = "green";
+
+    });
+
+
+    imgWrapperGreen.addEventListener("mouseout", function () {
+        imgScale.src = "../assets/images/scale.svg"
+        scaleTitle.style.color = "#000000"
+        scaleTitle.style.opacity = "0.21"
+        imgWrapperGreen.style.border = "none"
+    });
+
+    imgWrapperRed.addEventListener("mouseover", function () {
+        imgTemp.src = "../assets/images/hot-color.svg"
+        temTitle.style.color = "tomato"
+    });
+
+    imgWrapperRed.addEventListener("mouseout", function () {
+        imgTemp.src = "../assets/images/hot.svg"
+        temTitle.style.color = "#000000"
+        temTitle.style.opacity = "0.21"
+
+    });
+
+    imgWrapperVoilet.addEventListener("mouseover", function () {
+        imgVol.src = "../assets/images/beaker-color.svg"
+        volTitle.style.color = "violet"
+    });
+
+    imgWrapperVoilet.addEventListener("mouseout", function () {
+        imgVol.src = "../assets/images/beaker.svg"
+        volTitle.style.color = "#000000"
+        volTitle.style.opacity = "0.21"
+    });
+</script>
+<script src="../js/length.js"></script>
+
+</html>
